@@ -22,10 +22,61 @@ modules:
 
   - type: rpm-ostree
     repos:
-      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+      - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+      - qalculate-gtk
+      - kitty
+      - fira-code-fonts
+      - fontawesome-fonts
+      - fuzzel
+      - grim
+      - mako
+      - nerd-fonts
+      - pipewire-plugin-libcamera
+      - polkit-gnome
+      - powerline-fonts
+      - slurp
+      - solaar
+      - swappy
+      - squeekboard
+      - wlsunset
+      - wl-clipboard
+      - wl-mirror
+      - wev
+      - wtype
+      # (mine) utils:
+      - bat
+      - ddcutil
+      - dutree
+      - eza
+      - fd-find
+      - fish
+      - fzf
+      - gdb
+      - git-delta
+      - gparted
+      - ncdu
+      - perl
+      - playerctl
+      - policycoreutils
+      - ranger
+      - ripgrep
+      - syncthing
+      - udiskie
+      # (mine) external repos:
+      - eww-wayland-git
+      - tailscale
+      - hyprland
+      - hyprland-contrib
+      - hyprland-plugins
+      - hyprpicker
+      - hyprshot
+      - hyprpaper
+      - starship
+      - xdg-desktop-portal-hyprland
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
@@ -37,11 +88,11 @@ modules:
       - nix-installer # shell shortcuts for determinate system's nix installers
       - ublue-os-wallpapers
       # - ublue-update # https://github.com/ublue-os/ublue-update
-      # - 1password # install 1Password (stable) and `op` CLI tool
+      - 1password # install 1Password (stable) and `op` CLI tool
       # - dconf-update-service # a service unit that updates the dconf db on boot
       # - devpod # https://devpod.sh/ as an rpm
       # - gnome-vrr # enables gnome-vrr for your image
-      # - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
+      - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
       # - laptop # installs TLP and configures your system for laptop usage
       # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
 
@@ -49,8 +100,28 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
-      # - Celluloid: io.github.celluloid_player.Celluloid
-      # - Krita: org.kde.krita
+      - Celluloid: io.github.celluloid_player.Celluloid
+      - Bitwarden: com.bitwarden.desktop
+      - Wlvncc: com.github.any1.wlvncc
+      - Parsec: com.parsecgaming.parsec
+      - Slack: com.slack.Slack
+      - Spotify: com.spotify.Client
+      - Sublime Merge: com.sublimemerge.App
+      - VS Code: com.visualstudio.code-oss
+      - Handbrake: fr.handbrake.ghb
+      - Obsidian: md.obsidian.Obsidian
+      - Edge: com.microsoft.Edge
+      - Telegram: org.telegram.desktop
+      - VLC: org.videolan.VLC
+      - Warp: app.drey.Warp
+      - Clipboard: app.getclipboard.clipboard
+      - Dolphin: org.kde.dolpin
+      - Helvum: org.pipewire.Helvum
+      - Easteffects: com.github.wwmm.easyeffects
+      - FFmpeg: org.freedesktop.Platform.ffmpeg-full
+      - Spotube: com.github.KRTirtho.Spotube
+      - Minitext: io.github.nokse22.minitext
+      - Waycheck: dev.serebit.Waycheck
 
   - type: script
     scripts:
