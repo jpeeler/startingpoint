@@ -1,5 +1,9 @@
 # Starting point
 
+This is my personal image that is based on Sericea, but instead of Sway using Hyprland via [Solopasha's Copr](https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/).
+
+Image available at ghcr.io/jpeeler/ublue:latest.
+
 > **Warning**
 > Startingpoint was recently rewritten, and this version is considered a "1.0" *semi-*stable release.
 > There are breaking changes between this and the previous version.
