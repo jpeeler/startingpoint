@@ -34,6 +34,7 @@ modules:
       - fuzzel
       - grim
       - mako
+      - mesa-vdpau-drivers-freeworld
       - nerd-fonts
       - pipewire-plugin-libcamera
       - polkit-gnome
@@ -100,6 +101,7 @@ modules:
   - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
                 #  will be installed and set up
     custom-flatpaks: # this section is optional
+      - Discord: xyz.armcord.ArmCord
       - Celluloid: io.github.celluloid_player.Celluloid
       - Bitwarden: com.bitwarden.desktop
       - Wlvncc: com.github.any1.wlvncc
@@ -122,6 +124,7 @@ modules:
       - Spotube: com.github.KRTirtho.Spotube
       - Minitext: io.github.nokse22.minitext
       - Waycheck: dev.serebit.Waycheck
+      - Thunderbird: org.mozilla.Thunderbird
 
   - type: script
     scripts:
