@@ -33,6 +33,7 @@ modules:
       - fontawesome-fonts
       - fuzzel
       - grim
+      - gnome-keyring
       - mako
       - mesa-vdpau-drivers-freeworld
       - nerd-fonts
@@ -125,6 +126,7 @@ modules:
       - Minitext: io.github.nokse22.minitext
       - Waycheck: dev.serebit.Waycheck
       - Thunderbird: org.mozilla.Thunderbird
+      - Fractal: org.gnome.Fractal
 
   - type: script
     scripts:
