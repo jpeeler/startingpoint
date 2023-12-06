@@ -68,6 +68,7 @@ modules:
       - ripgrep
       - syncthing
       - udiskie
+      - zenity
       # (mine) external repos:
       - eww-wayland-git
       - tailscale
@@ -127,7 +128,9 @@ modules:
       - Waycheck: dev.serebit.Waycheck
       - Thunderbird: org.mozilla.Thunderbird
       - Fractal: org.gnome.Fractal
-
+      - Live Captioning: net.sapples.LiveCaptions
+      - Frog: com.github.tenderowl.frog
+      - PDF Arranger: com.github.jeromerobert.pdfarranger
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
