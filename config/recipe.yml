@@ -29,6 +29,7 @@ modules:
       - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/che/nerd-fonts/repo/fedora-%OS_VERSION%/che-nerd-fonts-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
     install:
       - qalculate-gtk
       - kitty
@@ -82,6 +83,7 @@ modules:
       - hyprshot
       - hyprpaper
       - starship
+      - SwayNotificationCenter
       - xdg-desktop-portal-hyprland
     remove:
       - firefox # default firefox removed in favor of flatpak
@@ -134,6 +136,7 @@ modules:
       - Live Captioning: net.sapples.LiveCaptions
       - Frog: com.github.tenderowl.frog
       - PDF Arranger: com.github.jeromerobert.pdfarranger
+      - Weather: org.gnome.Weather
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
