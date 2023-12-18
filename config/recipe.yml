@@ -39,6 +39,7 @@ modules:
       - grim
       - gnome-keyring
       - mako
+      - mpv
       - mesa-vdpau-drivers-freeworld
       - nerd-fonts
       - pipewire-plugin-libcamera
