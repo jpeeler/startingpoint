@@ -84,7 +84,6 @@ modules:
       - hyprshot
       - hyprpaper
       - starship
-      - SwayNotificationCenter
       - xdg-desktop-portal-hyprland
     remove:
       - firefox # default firefox removed in favor of flatpak
