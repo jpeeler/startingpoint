@@ -137,6 +137,8 @@ modules:
       - Frog: com.github.tenderowl.frog
       - PDF Arranger: com.github.jeromerobert.pdfarranger
       - Weather: org.gnome.Weather
+      - Czkawka: com.github.qarmin.czkawka
+      - Parsec: com.parsecgaming.parsec
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
