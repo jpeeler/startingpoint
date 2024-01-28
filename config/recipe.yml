@@ -86,55 +86,60 @@ modules:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
 
-  - type: bling # configure what to pull in from ublue-os/bling
-    install:
-      - nix-installer # shell shortcuts for determinate system's nix installers
-      - ublue-os-wallpapers
-      # - ublue-update # https://github.com/ublue-os/ublue-update
-      - 1password # install 1Password (stable) and `op` CLI tool
-      # - dconf-update-service # a service unit that updates the dconf db on boot
-      # - devpod # https://devpod.sh/ as an rpm
-      # - gnome-vrr # enables gnome-vrr for your image
-      - container-tools # installs container-related tools onto /usr/bin: kind, kubectx, docker-compose and kubens
-      # - laptop # installs TLP and configures your system for laptop usage
-      # - flatpaksync # allows synchronization of user-installed flatpaks, see separate documentation section
+  - type: default-flatpaks
+    notify: true   # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
+      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
+      install:
+      - xyz.armcord.ArmCord
+      - io.github.celluloid_player.Celluloid
+      - com.bitwarden.desktop
+      - com.github.any1.wlvncc
+      - com.parsecgaming.parsec
+      - com.slack.Slack
+      - com.spotify.Client
+      - com.sublimemerge.App
+      - com.visualstudio.code-oss
+      - fr.handbrake.ghb
+      - md.obsidian.Obsidian
+      - com.microsoft.Edge
+      - org.telegram.desktop
+      - org.videolan.VLC
+      - app.drey.Warp
+      - app.getclipboard.clipboard
+      - org.kde.dolpin
+      - org.pipewire.Helvum
+      - com.github.wwmm.easyeffects
+      - org.freedesktop.Platform.ffmpeg-full
+      - com.github.KRTirtho.Spotube
+      - io.github.nokse22.minitext
+      - dev.serebit.Waycheck
+      - org.mozilla.Thunderbird
+      - org.gnome.Fractal
+      - net.sapples.LiveCaptions
+      - com.github.tenderowl.frog
+      - com.github.jeromerobert.pdfarranger
+      - org.gnome.Weather
+      - com.github.qarmin.czkawka
+      - com.parsecgaming.parsec
+      - org.gnome.SimpleScan
+      # - org.gnome.Loupe
+      # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
+      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
+      # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
+      # Multiple install of same flatpaks with different branches is not supported.
+      remove:
+      # - org.gnome.eog
+      #
+    # A flatpak repo can also be added without having to install flatpaks,
+    # as long as one of the repo- fields is present
+    user:
+      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+      repo-name: flathub
 
-
-  - type: yafti # if included, yafti and it's dependencies (pip & libadwaita)
-                #  will be installed and set up
-    custom-flatpaks: # this section is optional
-      - Discord: xyz.armcord.ArmCord
-      - Celluloid: io.github.celluloid_player.Celluloid
-      - Bitwarden: com.bitwarden.desktop
-      - Wlvncc: com.github.any1.wlvncc
-      - Parsec: com.parsecgaming.parsec
-      - Slack: com.slack.Slack
-      - Spotify: com.spotify.Client
-      - Sublime Merge: com.sublimemerge.App
-      - VS Code: com.visualstudio.code-oss
-      - Handbrake: fr.handbrake.ghb
-      - Obsidian: md.obsidian.Obsidian
-      - Edge: com.microsoft.Edge
-      - Telegram: org.telegram.desktop
-      - VLC: org.videolan.VLC
-      - Warp: app.drey.Warp
-      - Clipboard: app.getclipboard.clipboard
-      - Dolphin: org.kde.dolpin
-      - Helvum: org.pipewire.Helvum
-      - Easteffects: com.github.wwmm.easyeffects
-      - FFmpeg: org.freedesktop.Platform.ffmpeg-full
-      - Spotube: com.github.KRTirtho.Spotube
-      - Minitext: io.github.nokse22.minitext
-      - Waycheck: dev.serebit.Waycheck
-      - Thunderbird: org.mozilla.Thunderbird
-      - Fractal: org.gnome.Fractal
-      - Live Captioning: net.sapples.LiveCaptions
-      - Frog: com.github.tenderowl.frog
-      - PDF Arranger: com.github.jeromerobert.pdfarranger
-      - Weather: org.gnome.Weather
-      - Czkawka: com.github.qarmin.czkawka
-      - Parsec: com.parsecgaming.parsec
-      - Scanner: org.gnome.SimpleScan
   - type: script
     scripts:
       # this sets up the proper policy & signing files for signed images to work
