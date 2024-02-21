@@ -74,9 +74,11 @@ modules:
       # (mine) external repos:
       - eww-wayland-git
       - tailscale
+      - hypridle
       - hyprland
       - hyprland-contrib
       - hyprland-plugins
+      - hyprlock
       - hyprpicker
       - hyprshot
       - hyprpaper
