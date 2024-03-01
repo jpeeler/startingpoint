@@ -73,6 +73,7 @@ modules:
       - zenity
       # (mine) external repos:
       - eww-wayland-git
+      - aylurs-gtk-shell
       - tailscale
       - hypridle
       - hyprland
