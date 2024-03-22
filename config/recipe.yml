@@ -54,6 +54,7 @@ modules:
       # (mine) utils:
       - bat
       - ddcutil
+      - difftastic
       - dutree
       - eza
       - fd-find
@@ -62,12 +63,14 @@ modules:
       - gdb
       - git-delta
       - gparted
+      - guestfs-tools
       - ncdu
       - perl
       - playerctl
       - policycoreutils
       - ranger
       - ripgrep
+      - qemu-kvm
       - syncthing
       - udiskie
       - zenity
