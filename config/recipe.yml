@@ -73,6 +73,7 @@ modules:
       - qemu-kvm
       - syncthing
       - udiskie
+      - valgrind
       - zenity
       # (mine) external repos:
       - eww-wayland-git
