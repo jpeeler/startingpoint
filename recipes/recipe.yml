@@ -117,7 +117,6 @@ modules:
       - xyz.armcord.ArmCord
       - io.github.celluloid_player.Celluloid
       - com.bitwarden.desktop
-      - com.github.any1.wlvncc
       - com.parsecgaming.parsec
       - com.slack.Slack
       - com.spotify.Client
@@ -129,11 +128,11 @@ modules:
       - org.telegram.desktop
       - org.videolan.VLC
       - app.drey.Warp
-      - app.getclipboard.clipboard
-      - org.kde.dolpin
+      - app.getclipboard.Clipboard
+      - org.kde.dolphin
       - org.pipewire.Helvum
       - com.github.wwmm.easyeffects
-      - org.freedesktop.Platform.ffmpeg-full
+      # - org.freedesktop.Platform.ffmpeg-full
       - com.github.KRTirtho.Spotube
       - io.github.nokse22.minitext
       - dev.serebit.Waycheck
