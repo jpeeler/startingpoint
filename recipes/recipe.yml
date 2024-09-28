@@ -62,6 +62,7 @@ modules:
       - ddcutil
       - difftastic
       - dutree
+      - erofs-utils
       - eza
       - fd-find
       - fish
