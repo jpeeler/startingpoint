@@ -43,7 +43,7 @@ modules:
       - gnome-keyring
       - mako
       - mpv
-      - mesa-vdpau-drivers-freeworld
+      - mesa-vdpau-drivers
       - nerd-fonts
       - pipewire-plugin-libcamera
       - polkit-gnome
