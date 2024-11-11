@@ -33,6 +33,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/erikreider/SwayNotificationCenter/repo/fedora-%OS_VERSION%/erikreider-SwayNotificationCenter-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/yalter/niri/repo/fedora-%OS_VERSION%/yalter-niri-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/ryanabx/cosmic-epoch/repo/fedora-%OS_VERSION%/ryanabx-cosmic-epoch-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
     install:
       - qalculate-gtk
       - kitty
@@ -101,6 +102,7 @@ modules:
       - niri
       # cosmic
       - cosmic-desktop
+      - xwayland-satellite
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
