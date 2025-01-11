@@ -123,49 +123,49 @@ modules:
       repo-name: flathub
       # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-      - xyz.armcord.ArmCord
-      - io.github.celluloid_player.Celluloid
-      - com.bitwarden.desktop
-      - com.parsecgaming.parsec
-      - com.slack.Slack
-      - com.spotify.Client
-      - com.sublimemerge.App
-      - com.visualstudio.code-oss
-      - fr.handbrake.ghb
-      - md.obsidian.Obsidian
-      - com.microsoft.Edge
-      - org.telegram.desktop
-      - org.videolan.VLC
-      - app.drey.Warp
-      - app.getclipboard.Clipboard
-      - org.kde.dolphin
-      - org.pipewire.Helvum
-      - com.github.wwmm.easyeffects
-      # - org.freedesktop.Platform.ffmpeg-full
-      - com.github.KRTirtho.Spotube
-      - io.github.nokse22.minitext
-      - dev.serebit.Waycheck
-      - org.mozilla.Thunderbird
-      - org.gnome.Fractal
-      - net.sapples.LiveCaptions
-      - com.github.tenderowl.frog
-      - com.github.jeromerobert.pdfarranger
-      - org.gnome.Weather
-      - com.github.qarmin.czkawka
-      - com.parsecgaming.parsec
-      - org.gnome.SimpleScan
+        - xyz.armcord.ArmCord
+        - io.github.celluloid_player.Celluloid
+        - com.bitwarden.desktop
+        - com.parsecgaming.parsec
+        - com.slack.Slack
+        - com.spotify.Client
+        - com.sublimemerge.App
+        - com.visualstudio.code-oss
+        - fr.handbrake.ghb
+        - md.obsidian.Obsidian
+        - com.microsoft.Edge
+        - org.telegram.desktop
+        - org.videolan.VLC
+        - app.drey.Warp
+        - app.getclipboard.Clipboard
+        - org.kde.dolphin
+        - org.pipewire.Helvum
+        - com.github.wwmm.easyeffects
+        # - org.freedesktop.Platform.ffmpeg-full
+        - com.github.KRTirtho.Spotube
+        - io.github.nokse22.minitext
+        - dev.serebit.Waycheck
+        - org.mozilla.Thunderbird
+        - org.gnome.Fractal
+        - net.sapples.LiveCaptions
+        - com.github.tenderowl.frog
+        - com.github.jeromerobert.pdfarranger
+        - org.gnome.Weather
+        - com.github.qarmin.czkawka
+        - com.parsecgaming.parsec
+        - org.gnome.SimpleScan
       # - org.gnome.Loupe
       # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
       # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08).
       # Only normal flatpak applications are (like Floorp Lightning web browser in this example).
       # Multiple install of same flatpaks with different branches is not supported.
-      remove:
+      ### remove:
       # - org.gnome.eog
       #
     # A flatpak repo can also be added without having to install flatpaks,
     # as long as one of the repo- fields is present
     user:
-      repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
       repo-name: flathub
+      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
