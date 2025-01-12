@@ -43,6 +43,7 @@ modules:
       - fuzzel
       - grim
       - gnome-keyring
+      - nautilus
       - mako
       - mpv
       - mesa-vdpau-drivers
