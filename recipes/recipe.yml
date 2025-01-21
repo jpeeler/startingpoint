@@ -45,6 +45,7 @@ modules:
       - gnome-keyring
       - nautilus
       - mako
+      - mupdf
       - mpv
       - mesa-vdpau-drivers
       - nerd-fonts
